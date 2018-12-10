@@ -13124,11 +13124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Kayla/Downloads/CIDM3312-Spring2018-InClass-master 6/BuffteksWebsiteSolution/BuffteksWebsite/BuffteksWebsite.csproj",
+      "projectUniqueName": "/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/BuffteksWebsite.csproj",
       "projectName": "BuffteksWebsite",
-      "projectPath": "/Users/Kayla/Downloads/CIDM3312-Spring2018-InClass-master 6/BuffteksWebsiteSolution/BuffteksWebsite/BuffteksWebsite.csproj",
+      "projectPath": "/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/BuffteksWebsite.csproj",
       "packagesPath": "/Users/Kayla/.nuget/packages/",
-      "outputPath": "/Users/Kayla/Downloads/CIDM3312-Spring2018-InClass-master 6/BuffteksWebsiteSolution/BuffteksWebsite/obj/",
+      "outputPath": "/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -13156,18 +13156,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.6"
+            "version": "[2.0.6, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

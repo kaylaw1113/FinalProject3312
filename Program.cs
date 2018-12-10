@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Hosting;
+// using Microsoft.AspNetCore;
+// using Microsoft.Extensions.DependencyInjection;
+//using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+// using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.EntityFrameworkCore;
 using BuffteksWebsite.Models;
 
 namespace BuffteksWebsite
@@ -17,33 +21,30 @@ namespace BuffteksWebsite
     {
         public static void Main(string[] args)
         {
+            var host = CreateWebHostBuilder(args).Build();
 
-            //the seeding routine is from here: https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/working-with-sql?view=aspnetcore-2.0
-            //this should change in 2.1
-            var host = BuildWebHost(args);
-
-            using(var scope = host.Services.CreateScope())
+            using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
 
                 try
                 {
+                    var context = services.GetRequiredService<BuffteksWebsiteContext>();
+                    context.Database.Migrate();
                     DataSeeder.Initialize(services);
                 }
-                catch(Exception exp)
+                catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(exp, "An error occurred seeding the Database");
-
+                    logger.LogError(ex, "An error occurred seeding the DB.");
                 }
             }
 
             host.Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+                .UseStartup<Startup>();
     }
 }

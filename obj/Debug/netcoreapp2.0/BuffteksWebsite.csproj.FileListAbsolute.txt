@@ -31,3 +31,14 @@ D:/jeff/Dropbox/CIS/CIDM/CIDM3312/Spring 2018/CIDM3312-Spring2018-InClass/Buffte
 /Users/Kayla/Downloads/CIDM3312-Spring2018-InClass-master 6/BuffteksWebsiteSolution/BuffteksWebsite/obj/Debug/netcoreapp2.0/BuffteksWebsite.AssemblyInfo.cs
 /Users/Kayla/Downloads/CIDM3312-Spring2018-InClass-master 6/BuffteksWebsiteSolution/BuffteksWebsite/obj/Debug/netcoreapp2.0/BuffteksWebsite.dll
 /Users/Kayla/Downloads/CIDM3312-Spring2018-InClass-master 6/BuffteksWebsiteSolution/BuffteksWebsite/obj/Debug/netcoreapp2.0/BuffteksWebsite.pdb
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/bin/Debug/netcoreapp2.0/BuffteksWebsite.deps.json
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/bin/Debug/netcoreapp2.0/BuffteksWebsite.runtimeconfig.json
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/bin/Debug/netcoreapp2.0/BuffteksWebsite.runtimeconfig.dev.json
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/bin/Debug/netcoreapp2.0/BuffteksWebsite.dll
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/bin/Debug/netcoreapp2.0/BuffteksWebsite.pdb
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/Debug/netcoreapp2.0/BuffteksWebsite.csprojAssemblyReference.cache
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/Debug/netcoreapp2.0/BuffteksWebsite.csproj.CoreCompileInputs.cache
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/Debug/netcoreapp2.0/BuffteksWebsite.AssemblyInfoInputs.cache
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/Debug/netcoreapp2.0/BuffteksWebsite.AssemblyInfo.cs
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/Debug/netcoreapp2.0/BuffteksWebsite.dll
+/Users/Kayla/Documents/cidm3312/Final_Clone/FinalProject3312/obj/Debug/netcoreapp2.0/BuffteksWebsite.pdb

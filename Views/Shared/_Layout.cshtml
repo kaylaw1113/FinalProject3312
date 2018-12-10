@@ -1,19 +1,31 @@
 ﻿<!DOCTYPE html>
 <html>
     <style>
-   body{
-       background-color: red;
-   }
-   .nav{
-       padding-top: 50;
-    }
-   
+    <style>
+        .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
     </style>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>@ViewData["Title"] - BuffteksWebsite</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -26,7 +38,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,7 +60,53 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+<!-- A vertical navbar -->
+<nav class="navbar navbar-expand-md bg-success navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"></a>
+    <img src="images/bufftekslogo.jpg" alt="Buffteks Logo" style="width:40px;">
+<!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:5000">Home</a>
+    </li>  
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:5000/Members">Members</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:5000/Clients">Clients</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:5000/Projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:5000/About">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:5000/Contact">Contact</a>
+    </li>
+  </ul>
+</div>
+</nav> 
+<br>
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
